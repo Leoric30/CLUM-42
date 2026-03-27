@@ -1,0 +1,211 @@
+/* Estilos compartidos para las páginas de dashboard por rol */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* ─── Cabecera ───────────────────────────────────────────────────────────── */
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.titleGroup {}
+
+.greeting {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6366f1;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.25rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* ─── Grid de stats ──────────────────────────────────────────────────────── */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* ─── Sección ────────────────────────────────────────────────────────────── */
+.section {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.sectionTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.sectionAction {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6366f1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+.sectionAction:hover {
+  text-decoration: underline;
+}
+
+.sectionBody {
+  padding: 1.25rem;
+}
+
+/* ─── Grid de dos columnas ───────────────────────────────────────────────── */
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Lista de items ─────────────────────────────────────────────────────── */
+.itemList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f8fafc;
+  gap: 0.75rem;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.itemLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.itemName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e293b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemMeta {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* ─── Badges de estado ───────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.badgePending  { background: #fef3c7; color: #92400e; }
+.badgeOk       { background: #d1fae5; color: #065f46; }
+.badgeDanger   { background: #fee2e2; color: #991b1b; }
+.badgeInfo     { background: #e0f2fe; color: #0369a1; }
+.badgeViolet   { background: #ede9fe; color: #5b21b6; }
+
+/* ─── Empty state ────────────────────────────────────────────────────────── */
+.emptyState {
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+/* ─── Quick action cards ─────────────────────────────────────────────────── */
+.quickActions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.actionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem 0.75rem;
+  border-radius: 10px;
+  border: 1.5px dashed #e2e8f0;
+  cursor: pointer;
+  background: #fafafa;
+  transition: border-color 0.15s, background 0.15s;
+  text-decoration: none;
+}
+
+.actionCard:hover {
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.04);
+}
+
+.actionIcon {
+  width: 28px;
+  height: 28px;
+  color: #6366f1;
+}
+
+.actionLabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #475569;
+  text-align: center;
+  line-height: 1.3;
+}

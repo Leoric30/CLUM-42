@@ -1,0 +1,58 @@
+# ========================================
+# Ignorar carpetas generadas por Maven
+# ========================================
+**/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ========================================
+# IDEs
+# ========================================
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/settings.json
+
+# ========================================
+# Claude Code (configuración local de permisos)
+# ========================================
+.claude/
+
+# ========================================
+# Spring Boot
+# ========================================
+*.log
+spring.log
+
+# ========================================
+# Variables de entorno (NUNCA subir credenciales)
+# ========================================
+.env
+.env.*
+!.env.example
+
+# ========================================
+# Sistema operativo
+# ========================================
+.DS_Store
+Thumbs.db
+
+# ========================================
+# Node / Frontend React
+# ========================================
+node_modules/
+frontend/**/dist/
+frontend/**/build/
+frontend/**/.env
+frontend/**/.env.*
+!frontend/**/.env.example
+
+# ========================================
+# Spring Boot: perfiles de configuración sensibles
+# ========================================
+**/src/main/resources/application-local.properties
+**/src/main/resources/application-local.yml
+**/src/main/resources/application-prod.properties
+**/src/main/resources/application-prod.yml

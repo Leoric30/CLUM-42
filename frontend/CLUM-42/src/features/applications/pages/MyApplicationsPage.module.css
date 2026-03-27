@@ -1,0 +1,172 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.subheading {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.success {
+  background: #ecfdf5;
+  border: 1px solid #6ee7b7;
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  color: #065f46;
+  font-size: 0.875rem;
+}
+
+.loading,
+.empty {
+  font-size: 0.875rem;
+  color: #6b7280;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.clubsLink {
+  color: #6366f1;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.clubsLink:hover {
+  text-decoration: underline;
+}
+
+.table {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.2fr 0.8fr 1fr;
+  padding: 0.75rem 1.25rem;
+  background: #f9fafb;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.2fr 0.8fr 1fr;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.875rem;
+}
+
+.row:last-of-type {
+  border-bottom: none;
+}
+
+.clubName {
+  font-weight: 500;
+  color: #111827;
+}
+
+.date {
+  color: #6b7280;
+}
+
+.version {
+  color: #6b7280;
+  text-align: center;
+}
+
+.noAction {
+  color: #d1d5db;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.badgePending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badgeApproved {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badgeRejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badgeResubmitted {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.resubmitBtn {
+  padding: 0.375rem 0.875rem;
+  background: #f59e0b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.resubmitBtn:hover {
+  background: #d97706;
+}
+
+.rejectionRow {
+  padding: 0.75rem 1.25rem;
+  background: #fff5f5;
+  border-top: 1px solid #fee2e2;
+  font-size: 0.8125rem;
+  color: #374151;
+}
+
+.rejectionText {
+  color: #dc2626;
+}

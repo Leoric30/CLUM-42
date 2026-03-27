@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ClumApplication<clum>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.clum.clum.ClumApplication",
+            "projectName": "clum",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
